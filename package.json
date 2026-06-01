@@ -1,0 +1,42 @@
+{
+  "name": "my-video",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.467",
+    "@remotion/tailwind-v4": "4.0.467",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.467",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.467",
+    "@slidev/cli": "^52.15.2",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "gh-pages": "^6.3.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "node scripts/run-remotion.mjs studio",
+    "studio": "node scripts/run-remotion.mjs studio",
+    "build": "node scripts/run-remotion.mjs bundle",
+    "render": "node scripts/run-remotion.mjs render",
+    "render:training": "node scripts/render-training-videos.mjs",
+    "slidev": "slidev slides.md --port 3040 --bind 127.0.0.1",
+    "slidev:build": "slidev build slides.md --out slidev-dist --base /wensli-slides/",
+    "deploy": "npm run slidev:build && gh-pages -d slidev-dist -b gh-pages -r https://github.com/ghxhub/wensli-slides.git",
+    "sync-runtime": "node scripts/sync-remotion-runtime.mjs",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

@@ -1,0 +1,21 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Slidev build output and gh-pages publish cache
+slidev-dist/
+node_modules/.cache/
+.remotion/
+
+# OS / editor noise
+Thumbs.db
+*.log
+.vscode/
+
+# Local artifacts / scratch dirs (not needed in repo)
+.codex-artifacts/
+.runtime-stilltest/
