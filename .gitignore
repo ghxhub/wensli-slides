@@ -19,3 +19,8 @@ Thumbs.db
 # Local artifacts / scratch dirs (not needed in repo)
 .codex-artifacts/
 .runtime-stilltest/
+
+# Generated images / scratch tooling (local only)
+
+# Temporary files
+.tmp/

@@ -17,6 +17,8 @@ import {
   INTRO_DURATION_IN_FRAMES,
   PROMPT_DURATION_IN_FRAMES,
   OVERVIEW_DURATION_IN_FRAMES,
+  SIYU_LIXUAN_POSTER_DURATION_IN_FRAMES,
+  SiyuLixuanPosterComposition,
   TrainingFullComposition,
   TrainingBrowseComposition,
   TrainingProductComposition,
@@ -38,6 +40,14 @@ import {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SiyuLixuanPoster"
+        component={SiyuLixuanPosterComposition}
+        durationInFrames={SIYU_LIXUAN_POSTER_DURATION_IN_FRAMES}
+        fps={30}
+        width={1440}
+        height={2048}
+      />
       <Composition
         id="WensliTrainingIntro"
         component={TrainingIntroComposition}

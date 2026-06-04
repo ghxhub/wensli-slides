@@ -16,6 +16,7 @@ import { TrainingProfileChapterScene } from "./scenes/TrainingProfileChapterScen
 import { TrainingProfileEntryScene } from "./scenes/TrainingProfileEntryScene";
 import { TrainingFilesScene } from "./scenes/TrainingFilesScene";
 import { TrainingThanksScene } from "./scenes/TrainingThanksScene";
+import { SiyuLixuanPosterScene } from "./scenes/SiyuLixuanPosterScene";
 
 export const INTRO_DURATION_IN_FRAMES = 108;
 export const GOALS_DURATION_IN_FRAMES = 126;
@@ -32,6 +33,7 @@ export const FILES_DURATION_IN_FRAMES = 210;
 export const THANKS_DURATION_IN_FRAMES = 132;
 export const FILTER_DURATION_IN_FRAMES = 144;
 export const EXPORT_DURATION_IN_FRAMES = 336;
+export const SIYU_LIXUAN_POSTER_DURATION_IN_FRAMES = 1;
 const SCENE_OVERLAP_IN_FRAMES = 12;
 
 const FILTER_START_IN_FRAMES =
@@ -233,4 +235,8 @@ export const TrainingFullComposition: React.FC = () => {
 
 export const TrainingVideoComposition: React.FC = () => {
   return <TrainingFullComposition />;
+};
+
+export const SiyuLixuanPosterComposition: React.FC = () => {
+  return <SiyuLixuanPosterScene />;
 };
